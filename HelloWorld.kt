@@ -3,7 +3,7 @@ fun main() {
 }
 /*  args: Array<String>
      - 함수 인자를 표기할 때 "변수명: 타입" 순서로 쓴다
-     - 제네릭을 자바롸 동일하다
+     - 제네릭 자바와 동일하다
      - Kotlin 1.3 부터 필수요소가 아니다
     println()
      - System.out.println() 을 간단하게 사용할 수 있다
