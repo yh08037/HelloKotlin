@@ -34,7 +34,7 @@ fun printSum1(a: Int, b: Int): Unit {
 /*  함수가 의미있는 값을 반환하지 않을 때, return type 은 Unit 이다
     Java 에서의 void 와 비슷하지만 Unit 을 리턴하기는 한다는 점은 다르다
     Kotlin 은 모든 함수 구현이 반환값을 가지며
-    return 을 명시적으로 써줄수도 생략할 수고 있다
+    return 을 명시적으로 써줄 수도 생략할 수도 있다
     반환이 없어보이는 코드의 경우에는 Unit 을 리턴한다
  */
 
