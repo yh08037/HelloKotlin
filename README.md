@@ -266,9 +266,13 @@ fun main() {
 
 자바에서 Person 클래스를 사용한다면
 ```java
-    Person person = new Person("Bob", true);
-    System.out.println("Hello, " + person.getName() + "!");
-    System.out.println(person.isMarried());
+public class TestPerson {
+    public static void main(String[] args) {
+        Person person = new Person("Bob", true);
+        System.out.println("Hello, " + person.getName() + "!");
+        System.out.println(person.isMarried());
+    }
+}
 ```
 와 같이 사용할 수 있을 것이다
    
