@@ -143,7 +143,7 @@ fun main() {
 </p></details>
 
 
-<details><summary> valvar.kt /summary>
+<details><summary> valvar.kt </summary>
 <p>
 <hr>
 
