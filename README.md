@@ -1,5 +1,10 @@
 # Hello, Kotlin!
 
+
+<details><summary> HelloWorld.kt </summary>
+<p>
+<hr>
+
 ## HelloWorld.kt
 
 ```kt
@@ -22,6 +27,15 @@ fun main(args: Array<String>) {
 - 이는 표준 자바 라이브러리 함수를 간소화해주는 wrapper 가 제공되기 때문이다
 
 - 세미콜론(;)은 특수한 경우 외에는 선택사항이다
+
+
+<hr>
+</p></details>
+
+
+<details><summary> Function.kt </summary>
+<p>
+<hr>
 
 
 ## Function.kt
@@ -126,4 +140,6 @@ fun main() {
 ```
 
 
+<hr>
+</p></details>
 
