@@ -174,7 +174,7 @@ Java 의 final 키워드와 같다
 </p></details>
 
 
-<details><summary> StringTemplate.kt /summary>
+<details><summary> StringTemplate.kt </summary>
 <p>
 <hr>
 
@@ -198,7 +198,7 @@ fun main() {
 <hr>
 </p></details>
 
-<details><summary> StringTemplate.kt /summary>
+<details><summary> StringTemplate.kt </summary>
 <p>
 <hr>
 
