@@ -363,13 +363,13 @@ fun mixOptimized(c1: Color, c2: Color) = when {
 }
 ```
 
-when 은 인자값 없이도 사용할 수 있다
+위의 함수와 같이 when 은 인자값 없이도 사용할 수 있다
 
 단 이때 조건부분은 반드시 Boolean 을 반환하는 expression 이어야한다
 
 위의 mix() 함수는 매 케이스 마다 set 객체를 생성하기 때문에 비효율적이므로
 
-mixOptimized() 는 객체 생성을 줄이고 논리식으로 대체하여 개선을 할 수 있다
+mixOptimized() 와 같이 객체 생성을 줄이고 논리식으로 대체하여 개선을 할 수 있다
 
 ```kt
 fun main() {
