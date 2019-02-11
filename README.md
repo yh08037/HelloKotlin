@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
 
 ### println()
 
-- ```System.out.println()``` 을 간단하게 사용할 수 있다
+- Java의 ```System.out.println()``` 을 간단하게 사용할 수 있다
 
 - 이는 표준 자바 라이브러리 함수를 간소화해주는 wrapper 가 제공되기 때문이다
 
