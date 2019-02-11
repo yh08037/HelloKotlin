@@ -39,8 +39,6 @@ Java 에서는 if 문이 statement 이므로 ```return a > b ? a : b;```
 Kotlin 에서는 반복문을 제외하고는 모두 expression 이므로
 ```return if (a > b) a else b``` 와 같은 표현이 가능하다
 
-따라서 아래의 max2 와 같은 표현도 가능하다
-
 - expression : 값을 반환하는 형태이다
 
 - statement : 아무런 값을 만들어 내지 않는다
