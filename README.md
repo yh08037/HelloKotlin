@@ -121,7 +121,6 @@ fun printSum2(a: Int, b: Int) {
 
 
 return type 인 Unit 은 생략이 가능하다
-
 또한 ```$a ${a + b}``` 와 같이 $ 를 이용하여 문자열 템플릿을 사용할 수 있다
 
 Java 의 ```"..." + 변수 + "..."``` 와 같은 방식보다 훨씬 간결하다
@@ -143,3 +142,153 @@ fun main() {
 <hr>
 </p></details>
 
+
+<details><summary> valvar.kt /summary>
+<p>
+<hr>
+
+## valvar.kt
+
+```kt
+fun main() {
+    // val : value; immutable type
+    val a: Int = 1  // 초기화와 동시에 값 할당
+    val b = 2       // `Int` 타입이 추론됨
+    val c: Int      // 초기화 시 값을 할당하지 않는다면
+    c = 3           // 반드시 타입을 명시해야 한다
+
+    // var : variance; mutable type
+    var x = 4       // `Int` 타입이 추론됨
+    x += 1
+
+    println("a : $a, b : $b, c : $c, x : $x")
+}
+```
+val 로 지정된 변수는 불변타입변수로, 단 한번만 값을 할당할 수 있다
+
+즉 추후에 값을 변경할 수 없으며 ```a += 1``` 과 같이 변경을 시도할 시 컴파일 에러가 난다
+        
+Java 의 final 키워드와 같다
+  
+<hr>
+</p></details>
+
+
+<details><summary> StringTemplate.kt /summary>
+<p>
+<hr>
+
+```kt
+fun main() {
+    var a = 1
+
+    val s1 = "a is $a"
+
+    a = 2
+
+    val s2 = "${s1.replace("is", "was")}, but now is $a"
+
+    println(s1)
+    println(s2)
+}
+```
+
+단순히 변수가 아니라 추가적인 기능이 호출된다면 위와 같이 ${...} block 으로 사용해야 한다
+
+<hr>
+</p></details>
+
+<details><summary> StringTemplate.kt /summary>
+<p>
+<hr>
+
+```kt
+class Person (
+    val name: String,       // val -> getter 생성
+    var isMarried: Boolean  // var -> getter, setter 생성
+)
+```
+Java 에서는 캡슐화를 위해 멤버변수를 private 선언하고 get, set 메소드를 통해 접근하였지만
+
+Kotlin 은 get, set 메소드가 묵시적으로 생성되고, 실제로 사용할 때는 직접 접근하듯이 사용하면 된다
+
+또한 Java 문법과 비교했을 때, 멤버변수 선언과 이를 초기화해주기 위한 생성자를 따로 정의하는데에 비해
+
+Kotlin 에서는 class ClassName(name: type , ... ) { ... } 와 같은 형태로 정의하여 그대로 생성자로 사용한다
+
+또한 객체를 생성하는데에 있어서 new 키워드를 사용하지 않는다
+
+```kt
+class Rectangle(val height: Int, val width: Int) {
+    val isSquare: Boolean
+        get() {
+            return height == width
+        }
+}
+```
+
+getter 와 setter 가 묵시적으로 자동 생성되지만 특정 구현부를 넣고 싶은 경우도 있다
+
+이런 경우 위의 isSquare 와 같이 get() set() 메소드를 직접 구현할 수도 있다
+
+
+```kt
+enum class Language(val greeting: String) {
+    EN("Hello"), ES("Hola"), FR("Bonjour")
+}
+
+class Person2(val name: String, val lang: Language = Language.EN) {
+    fun greet() = println("${lang.greeting}, $name!")
+}
+```
+
+Kotlin 에서는 인자들의 기본값을 설정해줄 수 있다
+
+기본값이 설정되어있는 인자는 인스턴스를 생성할 때 생략할 수 있다
+
+
+```kt
+fun main() {
+    val person = Person("Bob", true)
+    println("Hello, ${person.name}!")    // 실제로는 getter 가 호출된다
+    println(person.isMarried)           // 실제로는 getter 가 호출된다
+
+    val rectangle = Rectangle(41, 43)
+    println(if (rectangle.isSquare) "Square" else "Not square")
+
+    val kim = Person2("Dohun Kim")
+    val yoon = Person2("Greathoney", Language.FR)
+
+    kim.greet()
+    yoon.greet()
+}
+```
+
+자바에서 Person 클래스를 사용한다면
+```java
+    Person person = new Person("Bob", true);
+    System.out.println("Hello, " + person.getName() + "!");
+    System.out.println(person.isMarried());
+```
+와 같이 사용할 수 있을 것이다
+   
+변수이름이 name 이므로 컴파일될 때 getName(), setName() 과 같이 이름이 지어진다
+
+물론 Person 클래스 정의에서 name 이 val 로 선언되었으므로 getter 만 생성된다
+
+한편 변수이름이 isMarried 와 같이 isXXXX 의 형태인 경우
+
+getter 는 isMarried(), setter 는 setMarried() 와 같이 이름이 지어진다
+
+<br>
+
+expression 형태릐 if 문을 통해 isSquare 의 값에 따라 다른 문자열이 출력되도록 해보았다
+
+Kotlin 문법의 매력적이면서도 멋진 특성이라고 생각한다
+ 
+
+<hr>
+</p></details>
+
+
+     
