@@ -198,7 +198,7 @@ fun main() {
 <hr>
 </p></details>
 
-<details><summary> StringTemplate.kt </summary>
+<details><summary> ClassAndProperty.kt </summary>
 <p>
 <hr>
 
