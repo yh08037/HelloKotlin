@@ -284,7 +284,9 @@ public class TestPerson {
 
 getter 는 isMarried(), setter 는 setMarried() 와 같이 이름이 지어진다
 
-<br>
+```kt
+println(if (rectangle.isSquare) "Square" else "Not square")
+```
 
 expression 형태릐 if 문을 통해 isSquare 의 값에 따라 다른 문자열이 출력되도록 해보았다
 
