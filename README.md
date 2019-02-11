@@ -117,11 +117,11 @@ Java 의 ```"..." + 변수 + "..."``` 와 같은 방식보다 훨씬 간결하�
 
 ```kt
 fun main() {
-println(max1(1, 2))
-println(max2(4, 3))
-println(max3(5, 6))
-printSum1(10, 20)
-printSum2(1, 6)
+    println(max1(1, 2))
+    println(max2(4, 3))
+    println(max3(5, 6))
+    printSum1(10, 20)
+    printSum2(1, 6)
 }
 ```
 
