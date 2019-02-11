@@ -78,7 +78,7 @@ max2 와 같은 expression 형태의 함수는 return type 을 생략할 수 있
 
 ```kt
 fun printSum1(a: Int, b: Int): Unit {
-println("Sum of $a and $b is ${a + b}")
+    println("Sum of $a and $b is ${a + b}")
 }
 
 
