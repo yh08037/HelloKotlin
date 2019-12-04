@@ -13,9 +13,6 @@
 이러한 Kotlin의 멋진 특징에 매력을 느껴, Kotlin의 문법을 알아보고 이를 적용하여 안드로이드 앱을 구현하여 보고자 한다.
 
 
-<details><summary> HelloWorld.kt </summary>
-<p>
-<hr>
 
 ## HelloWorld.kt
 
@@ -40,14 +37,6 @@ fun main(args: Array<String>) {
 
 - 세미콜론(;)은 특수한 경우 외에는 선택사항이다
 
-
-<hr>
-</p></details>
-
-
-<details><summary> Function.kt </summary>
-<p>
-<hr>
 
 
 ## Function.kt
@@ -152,13 +141,6 @@ fun main() {
 ```
 
 
-<hr>
-</p></details>
-
-
-<details><summary> valvar.kt </summary>
-<p>
-<hr>
 
 ## valvar.kt
 
@@ -183,13 +165,7 @@ val 로 지정된 변수는 불변타입변수로, 단 한번만 값을 할당�
         
 Java 의 final 키워드와 같다
   
-<hr>
-</p></details>
 
-
-<details><summary> StringTemplate.kt </summary>
-<p>
-<hr>
 
 ## StringTemplate.kt
 
@@ -210,12 +186,7 @@ fun main() {
 
 단순히 변수가 아니라 추가적인 기능이 호출된다면 위와 같이 ${...} block 으로 사용해야 한다
 
-<hr>
-</p></details>
 
-<details><summary> ClassAndProperty.kt </summary>
-<p>
-<hr>
 
 ## ClassAndProperty.kt
 
@@ -310,12 +281,7 @@ expression 형태 if 문을 통해 isSquare 의 값에 따라 다른 문자열�
 Kotlin 문법의 매력적이면서도 멋진 특성이라고 생각한다
  
 
-<hr>
-</p></details>
 
-<details><summary> EnumAndWhen.kt </summary>
-<p>
-<hr>
 
 ## EnumAndWhen.kt
     
@@ -397,13 +363,7 @@ fun main() {
 }
 ```
 
-<hr>
-</p></details>
 
-
-<details><summary> WhenAndSmartCast.kt </summary>
-<p>
-<hr>
 
 ## WhenAndSmartCast.kt
 
@@ -467,12 +427,7 @@ fun main() {
 }
 ```
 
-<hr>
-</p></details>
 
-<details><summary> Iteration.kt </summary>
-<p>
-<hr>
 
 ## Iteration.kt
 
@@ -524,5 +479,3 @@ fun main() {
 }
 ```
 
-<hr>
-</p></details>
